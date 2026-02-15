@@ -2,16 +2,15 @@
 
 A simple tool to predict sports match outcomes and find good betting opportunities using real match data and team statistics.
 
-## What it does
-
+#What it does
 - Pulls real match data and odds from APIs
-- Analyzes team form, head-to-head records, and goal statistics  
+- Analyzes team form, h2h records and goal statistics  
 - Makes predictions for upcoming matches
 - Shows you bets with good expected value
 
-## Getting started
+#Getting started
 
-### Requirements
+##Requirements
 
 - Python 3.9+
 - Node.js 16+
@@ -19,9 +18,8 @@ A simple tool to predict sports match outcomes and find good betting opportuniti
   - [Football Data](https://www.football-data.org/client/register)
   - [The Odds API](https://the-odds-api.com/)
 
-### Setup
-
-**Backend:**
+#Setup
+Backend:
 ```bash
 cd backend
 python -m venv .venv
@@ -32,7 +30,7 @@ cp .env.example .env
 uvicorn backend.app.main:app --reload --port 8000
 ```
 
-**Frontend:**
+Frontend:
 ```bash
 cd frontend
 npm install
@@ -40,14 +38,7 @@ npm run dev
 ```
 
 Then open http://localhost:5173
-
-## How it works
-
-1. Fetches upcoming Premier League matches
-2. Gets live odds from bookmakers
-3. Calculates team stats (form, goals, head-to-head)
-4. Predicts match outcomes
-5. Compares predictions to odds to find value bets
+All done.
 
 ## Project structure
 
